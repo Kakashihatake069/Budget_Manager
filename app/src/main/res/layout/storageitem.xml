@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="@dimen/_10sdp"
+   >
+
+
+
+    <LinearLayout
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+
+       >
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="0.5"
+            android:weightSum="2"
+            >
+
+            <TextView
+                android:id="@+id/txtdate"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="date"
+                android:textColor="#19688B"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_weight="1"
+
+                />
+            <TextView
+                android:id="@+id/txttime"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="time"
+                android:textColor="#19688B"
+                android:gravity="center"
+                android:textStyle="bold"
+               android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:weightSum="6"
+            >
+
+            <TextView
+                android:gravity="center"
+                android:layout_margin="2.5dp"
+                android:layout_weight="1"
+                android:id="@+id/txtid"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:background="@drawable/roundbg"
+                android:text="id" />
+
+            <TextView
+                android:layout_margin="2.5dp"
+                android:gravity="center"
+                android:background="@drawable/roundbg"
+                android:layout_weight="2"
+                android:id="@+id/txtamount"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="amount"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:gravity="center"
+                android:id="@+id/txtmode"
+                android:layout_margin="2.5dp"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="mode"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:background="@drawable/roundbg"
+                />
+
+            <ImageView
+                android:layout_weight="1"
+                android:id="@+id/imgedit"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:src="@drawable/baseline_mode_edit_24" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            >
+
+
+            <TextView
+                android:layout_margin="2.5dp"
+                android:gravity="center"
+                android:layout_weight="2"
+                android:id="@+id/txtcategory"
+                android:background="@drawable/roundbg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="category"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                />
+
+            <TextView
+                android:gravity="center"
+                android:background="@drawable/roundbg"
+                android:layout_weight="2"
+                android:layout_margin="2.5dp"
+                android:id="@+id/txttype"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:text="type" />
+
+            <ImageView
+                android:id="@+id/imgdelete"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:src="@drawable/trash" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:weightSum="2.5"
+          >
+
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_gravity="left"
+                android:layout_weight="2.5"
+                android:layout_margin="2.5dp"
+                android:background="@drawable/roundbg"
+                android:id="@+id/txtnote"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="note"
+                android:paddingLeft="@dimen/_10sdp"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+

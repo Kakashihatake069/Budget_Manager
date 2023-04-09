@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_250sdp"
+    android:layout_height="@dimen/_470sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    app:cardCornerRadius="@dimen/_10sdp"
+
+    android:elevation="@dimen/_70sdp">
+
+
+    <LinearLayout
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_470sdp"
+        android:orientation="vertical"
+        android:weightSum="10"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Select category"
+            android:textSize="@dimen/_18sdp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="#19688B"
+            android:layout_weight="1"/>
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvexCategory"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="2"
+            android:gravity="center"
+            android:layout_weight="1"
+            >
+
+
+            <androidx.appcompat.widget.AppCompatButton
+
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cornerbotton"
+                android:backgroundTint="#19688B"
+                android:layout_weight="1"
+                android:textColor="#FFFFFF"
+                android:text="CANCEL"
+                android:textSize="@dimen/_14sdp"
+
+                android:id="@+id/btnexcancel"
+                />
+
+
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_weight="1"
+                android:layout_width="@dimen/_80sdp"
+                android:textSize="@dimen/_14sdp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cornerbotton"
+                android:backgroundTint="#19688b"
+
+                android:textColor="@color/white"
+
+                android:text="SET"
+                android:layout_marginLeft="@dimen/_32sdp"
+                android:id="@+id/btnexset"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.cardview.widget.CardView>

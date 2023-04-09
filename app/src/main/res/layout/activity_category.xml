@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CategoryActivity"
+    android:weightSum="10"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:background="#19688B"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgcategoryback"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Add Category"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+<!--        <ImageView-->
+<!--            android:layout_width="@dimen/_20sdp"-->
+<!--            android:layout_height="@dimen/_20sdp"-->
+<!--            android:layout_gravity="end"-->
+<!--            android:layout_marginRight="@dimen/_10sdp"-->
+<!--            android:src="@drawable/done" />-->
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9.2"
+        android:orientation="vertical"
+        android:background="#DFEAEF">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_270sdp"
+            android:layout_height="@dimen/_65sdp"
+           android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:elevation="70dp"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Add Category"
+                android:textColor="#19688B" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/edtcategory"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:hint=""
+                android:minHeight="48dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnsubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="SUBMIT"
+            android:textColor="@color/white"
+            android:background="#19688B"
+            >
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/Rcvcategory"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="@dimen/_10sdp">-->
+
+<!--        </androidx.recyclerview.widget.RecyclerView>-->
+
+
+    </LinearLayout>
+</LinearLayout>
