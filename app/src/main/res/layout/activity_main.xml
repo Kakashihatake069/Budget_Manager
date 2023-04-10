@@ -213,7 +213,7 @@
                 <ImageView
                     android:layout_width="@dimen/_35sdp"
                     android:layout_height="@dimen/_35sdp"
-                    android:src="@drawable/structure"
+                    android:src="@drawable/categoryicon"
                     android:layout_margin="@dimen/_5sdp"
 
                   />
