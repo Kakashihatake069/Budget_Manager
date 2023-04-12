@@ -41,9 +41,6 @@ class TransactionActivity : AppCompatActivity() {
 
     private fun initview() {
 
-//        binding.imgtransback = findViewById(R.id.imgtransback)
-//        rcvtrans = findViewById(R.id.rcvtrans)
-
         binding.imgtransback.setOnClickListener {
             var transback = Intent(this, MainActivity::class.java)
             startActivity(transback)
@@ -77,16 +74,11 @@ class TransactionActivity : AppCompatActivity() {
 
 
             val dialog = Dialog(this)
-            val dialogBinding: DeleteDialogboxBinding=
-        DeleteDialogboxBinding.inflate(layoutInflater)
+            val dialogBinding: DeleteDialogboxBinding =
+                DeleteDialogboxBinding.inflate(layoutInflater)
             dialog.setContentView(dialogBinding.root)
 
-//            dialog.setCancelable(false)
-//            dialog.setContentView(R.layout.income_category_dialogbox)
             dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
-
-
-
 
 
             dialogBinding.btndeletecancel.setOnClickListener {

@@ -4,23 +4,18 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.cardview.widget.CardView
+import androidx.core.view.GravityCompat
 import com.example.budgettracker.R
 import com.example.budgettracker.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-//    lateinit var crdincome :CardView
-//    lateinit var crdexpense : CardView
-//    lateinit var crdtrans : CardView
-//    lateinit var crdreports : CardView
-//    lateinit var crdcategory : CardView
-//    lateinit var tilte_income : TextView
-//    lateinit var title_expence : TextView
 
     lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+//        setContentView(R.layout.activity_main)
+
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -28,16 +23,11 @@ class MainActivity : AppCompatActivity() {
         initview()
 
     }
-
     private fun initview() {
-//        crdincome = findViewById(R.id.crdincome)
-//        crdexpense = findViewById(R.id.crdexpense)
-//        crdtrans = findViewById(R.id.crdtrans)
-//        crdreports = findViewById(R.id.crdreports)
-//        crdcategory = findViewById(R.id.crdcategory)
-//        tilte_income = findViewById(R.id.tilte_income)
-//        title_expence = findViewById(R.id.title_expence)
 
+        binding.drawermenu.setOnClickListener {
+            binding.navigationdrawer.openDrawer(GravityCompat.START)
+        }
 
          val tilte_income = "Add Income"
         binding.crdincome.setOnClickListener {

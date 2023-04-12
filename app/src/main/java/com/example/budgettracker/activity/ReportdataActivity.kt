@@ -10,7 +10,7 @@ import com.example.budgettracker.databinding.ActivityReportdataBinding
 
 class ReportdataActivity : AppCompatActivity() {
     lateinit var binding: ActivityReportdataBinding
-    lateinit var imgreportback : ImageView
+    lateinit var imgreportback: ImageView
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,7 +24,6 @@ class ReportdataActivity : AppCompatActivity() {
 
     private fun initview() {
 
-//        imgreportback = findViewById(R.id.imgreportback)
         binding.imgreportback.setOnClickListener {
             var report = Intent(this, MainActivity::class.java)
             startActivity(report)
